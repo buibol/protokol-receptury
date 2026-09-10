@@ -1,6 +1,6 @@
 # Protokół Receptury
 
-**Protokół Receptury** to narzędzie wspomagające przygotowanie dokumentacji leku recepturowego w aptekach korzystających z systemu KS-APW.
+**Protokół Receptury** to narzędzie wspomagające przygotowanie dokumentacji leku recepturowego w aptekach korzystających z systemu KS-AOW.
 
 Program pobiera dane z bazy Firebird systemu aptecznego i pozwala przygotować gotowy protokół w formacie PDF.
 
