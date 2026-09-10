@@ -2,7 +2,7 @@
 
 **Protokół Receptury** to narzędzie wspomagające przygotowanie dokumentacji leku recepturowego w aptekach korzystających z systemu KS-AOW.
 
-Program pobiera dane z bazy Firebird systemu aptecznego i pozwala przygotować gotowy protokół w formacie PDF.
+Program pobiera wymagane dane z bazy Firebird systemu aptecznego i pozwala przygotować gotowy protokół w formacie PDF.
 
 ## Najważniejsze funkcje
 
@@ -12,8 +12,18 @@ Program pobiera dane z bazy Firebird systemu aptecznego i pozwala przygotować g
 - możliwość korekty ilości odważonych,
 - generowanie dokumentu PDF,
 - zapamiętywanie podstawowych danych apteki,
-- możliwość pracy z bazą na serwerze sieciowym,
+- możliwość pracy z bazą znajdującą się na serwerze sieciowym,
 - samodzielna aplikacja dla Windows – bez konieczności instalowania Pythona.
+
+## Bezpieczny dostęp do bazy danych
+
+Aplikacja nie wymaga korzystania z głównego konta administracyjnego bazy Firebird.
+
+W ramach wdrożenia tworzony jest **dedykowany użytkownik bazy danych**, przeznaczony wyłącznie do pracy programu Protokół Receptury.
+
+Dostęp tego konta jest ograniczony do zakresu niezbędnego do odczytu danych wymaganych przez aplikację.
+
+Takie rozwiązanie pozwala oddzielić dostęp programu od kont administracyjnych oraz ograniczyć jego uprawnienia zgodnie z zasadą minimalnych uprawnień.
 
 ## Pobieranie
 
@@ -32,9 +42,9 @@ krzysiek@ksbiuro.pl
 
 ## Informacja
 
-Program przeznaczony jest dla aptek korzystających z kompatybilnej instalacji KS-APW oraz bazy Firebird.
+Program przeznaczony jest dla aptek korzystających z kompatybilnej instalacji KS-AOW oraz bazy Firebird.
 
-Przed wdrożeniem zalecany jest kontakt w celu weryfikacji konfiguracji środowiska.
+Przed wdrożeniem zalecany jest kontakt w celu weryfikacji konfiguracji środowiska oraz przygotowania dedykowanego konta dostępowego do bazy danych.
 
 ---
 
